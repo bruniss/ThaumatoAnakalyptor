@@ -176,7 +176,7 @@ RUN ls -la
 RUN cmake .. \
     && make  
 
-COPY sheet_generation.cpython-310-x86_64-linux-gnu.so ../../
+COPY /workspace/ThaumatoAnakalyptor/sheet_generation/sheet_generation.cpython-310-x86_64-linux-gnu.so /workspace/ThaumatoAnakalyptor/
 
 WORKDIR /
 
