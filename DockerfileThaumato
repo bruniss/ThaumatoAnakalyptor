@@ -179,6 +179,9 @@ RUN cmake .. \
 RUN cmake
 RUN make
 
+RUN pwd
+RUN ls -la
+
 COPY sheet_generation.cpython-310-x86_64-linux-gnu.so ../../
 
 
