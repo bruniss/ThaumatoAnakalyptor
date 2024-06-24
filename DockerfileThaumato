@@ -176,6 +176,12 @@ RUN ls -la
 RUN cmake .. \
     && cmake --build .
 
+RUN cmake
+RUN make
+
+COPY sheet_generation.cpython-310-x86_64-linux-gnu.so ../../
+
+
 WORKDIR /
 
 # Add user for GUI
